@@ -7,4 +7,3 @@ def listen():
     data = app.get_json()
     print(data)
     return 'Hello, world!'
-
