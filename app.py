@@ -1,9 +1,9 @@
-from flask import Flask
+from flask import Flask, request
 
 app = Flask(__name__)
 
 @app.route('/', methods=('POST',))
 def listen():
-    data = app.get_json()
+    data = request.json
     print(data)
     return 'Hello, world!'
